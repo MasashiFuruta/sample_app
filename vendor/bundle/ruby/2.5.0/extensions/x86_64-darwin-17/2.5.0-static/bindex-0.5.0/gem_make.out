@@ -1,0 +1,15 @@
+current directory: /Users/masashi/git-repo/sample_app/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+/Users/masashi/.rbenv/versions/2.5.0/bin/ruby -r ./siteconf20180823-69502-33p8mn.rb extconf.rb
+creating Makefile
+
+current directory: /Users/masashi/git-repo/sample_app/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/masashi/git-repo/sample_app/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/masashi/git-repo/sample_app/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20180823-69502-1sqk0oy/bindex
