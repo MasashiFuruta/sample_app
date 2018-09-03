@@ -1,8 +1,6 @@
 class ApplicationController < ActionController::Base
   # クロスサイトスクリプティングの防止
   protect_from_forgery with: :exception
-
-  def hello
-    render html: "hello, world!"
-  end
+  # SessionHelperを読み込む。これでこのアプリのどこでもヘルパーが使える
+  include SessionsHelper
 end
