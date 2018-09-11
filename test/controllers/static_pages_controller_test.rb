@@ -11,13 +11,13 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get home" do
-    get home_url
-    assert_response :success
-    # アクション実行の結果として描写されるHTMLの内容を検証
-    # assert_select(selector, equality?, message?)
-    assert_select "title", "Home | #{@base_title}"
-  end
+  # test "should get home" do
+  #   get home_url
+  #   assert_response :success
+  #   # アクション実行の結果として描写されるHTMLの内容を検証
+  #   # assert_select(selector, equality?, message?)
+  #   assert_select "title", "Home | #{@base_title}"
+  # end
 
   test "should get help" do
     get help_url
