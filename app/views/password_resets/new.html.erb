@@ -1,0 +1,19 @@
+<% provide(:title, "Forgot password") %>
+<h1>Forgot password</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+    <%#
+    シンプルなフォームを生成するためインスタンス変数ではなく
+    シンボル:password_resetを渡している
+    newやeditのviewを準備する時に、同じ_form部分テンプレートを利用した時、
+    同じ書き方で出し分けてくれるのが便利。ということのようです。 %>
+    <%= form_for(:password_reset, url: password_resets_path) do |f| %>
+      <%= f.label :email %>
+      <%= f.email_field :email, class: 'form-control' %>
+
+      <%= f.submit "Submit", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
